@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , 'sans-serif';
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background: #0658cb;
+    height: 80px;
+}
+nav .container{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 50px;
+    height: 100%;
+}
+.logo img{
+    width: 50px;
+}
+nav .menu ul{
+    display: flex;
+}
+nav .menu ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 400;
+    transition: all 100ms;
+}
+nav .menu ul li a:hover{
+    background-color: #fff;
+    color: #0658cb;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 600;
+}
+label i{
+    font-size: 35px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 100ms;
+}
+label i:hover{
+    font-size: 45px;
+}
+.menu label{
+    display: none;
+}
+.menu input{
+    display: none;
+}
+
+@media (max-width: 700px){
+    nav .menu ul{
+        position: absolute;
+        left: -150%;
+        background: rgb(6, 88, 203);
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 200ms ease 0s;
+    }
+        
+    nav .menu ul li{
+        margin: 20px 0;
+    }
+    nav .menu ul li a{
+        font-size: 25px;
+    }
+    nav .menu ul li a:hover{
+        background-color: #fff;
+        color: rgb(6, 88, 203);
+        border-width: 0;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+    .menu label{
+        display: flex;
+    }
+    .menu input{
+        display: flex;
+    }
+    #checking:checked ~ ul {
+        left: 0%;
+    }
+    #checking{
+        display: none;
+    }
+}
+
+section .container{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(img/gq-dhoni-cwc15-semis_0.jpg.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+}
+.msd-text{
+    color: #fff;
+    font-family: 'Poppins' , 'sans-serif';
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Poppins' , 'sans-serif';
+    font-size: 3.5rem;
+    margin: 0;
+}
+.ficc-text{
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: -1.2rem;
+}
+.left-data{
+    margin: 20%;
+    margin-top: 16%;
+}
+.msd-quote{
+    font-family: 'Poppins' , 'sans-serif';
+    color: #fff;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+}
+section .container .left{
+    width: 50%;
+}
+
+@media (max-width: 486px){
+    .msd-quote{
+        font-size: 1rem!important;
+    }
+}
+@media (max-width: 491px){
+    .msd-text{
+        font-size: 3rem!important;
+    }
+    .ficc-text{
+        font-size: 1rem!important;
+    }
+}
+@media (max-width: 398px){
+    .msd-text{
+        font-size: 2rem!important;
+    }
+    .ficc-text{
+        font-size: 0.8rem!important;
+        margin-top: -9px!important;
+    }
+}
+@media (max-width: 406px){
+    .msd-quote{
+        font-size: 12px!important;
+    }
+}
+@media(max-width: 976px){
+    section .container .left{
+        width: 100%;
+    }
+    
+    .left-data{
+        text-align: center;
+    }
+    .msd-text{
+        font-size: 3.7rem;
+    }
+    .ficc-text{
+        font-size: 1.2rem;
+        margin-top: -1.4rem;
+    }
+    .msd-quote{
+        margin-top: 2rem;
+    }
+}
+.about-header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    background: #0658cb;
+}
+.about-text{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 5px;
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.about-card{
+    position: absolute;
+    top: 51px;
+    text-align: center;
+    width: 80%;
+    backdrop-filter: blur(18px);
+    color: #fff;
+    border-radius: 30px;
+}
+.about-bg{
+    width: 1349px;
+    height: 1080px;
+    background-image: url(img/wp4151482-ms-dhoni-hd-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto;
+}
+.about-card h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 19px;
+}
+.about-card p{
+    padding: 0px 10px 20px 10px;
+}
+@media (max-width: 869px){
+    .about-bg{
+        width: 1349px;
+        height: 2000px;
+        background-image: url(img/wp4151482-ms-dhoni-hd-wallpapers.jpg),url(img/wp4446237-ms-dhoni-full-hd-4k-wallpapers.jpg);
+        background-repeat: no-repeat,no-repeat;
+        background-position: top,bottom;
+        background-size: auto,105rem;
+    }
+}
+@media (max-width: 465px)
+{.about-bg {
+    width: 1349px;
+    height: 3485px;
+    background-image: url(img/wp4151482-ms-dhoni-hd-wallpapers.jpg),url(img/wp4446237-ms-dhoni-full-hd-4k-wallpapers.jpg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: top,bottom;
+    background-size: auto,288rem;
+}}
+
+.victory-header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    background: #0658cb;
+}
+.victory-text{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 5px;
+}
+.victory-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.section-victory-card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 10px;
+    justify-content: space-between;
+    background-image: url(img/wp5546988-ms-dhoni-full-hd-mobile-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.victory-card{
+    height: 460px;
+    text-align: center;
+    width: 23%;
+    background: #0658cb;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 11px;
+}
+.victory-card h1{
+    margin: 10px;
+}
+.victory-card p{
+    margin: 10px;
+}
+@media (max-width: 1099px){
+    .victory-card{
+        width: 30%;
+    }
+}
+@media (max-width: 845px){
+    .victory-card{
+        width: 45%;
+    }
+}
+@media (max-width: 550px){
+    .victory-card{
+        width: 95%;
+        height: 265px;
+    }
+}
+@media (max-width: 455px){
+    .victory-card{
+        width: 95%;
+        height: 512px;
+    }
+}
+.award-header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    background: #0658cb;
+}
+.award-text{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 5px;
+}
+.award-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 35px;
+    background: #0658cb91;
+}
+.award-card{
+    width: 27%;
+    height: 310px;
+    background: #0658cb;
+    color: #fff;
+    margin: 38px;
+    border-radius: 10px;
+    box-shadow: -30px 30px #bed3f1;
+}
+.award-card p{
+    padding: 10px;
+}
+.award-card h1{
+    padding: 10px;
+}
+@media (max-width: 1269px){
+    .award-content{
+        padding: 0px;
+    }
+    .award-card{
+        margin: 32px;
+    }
+}
+@media (max-width: 1010px){
+    .award-card{
+        width: 40%;
+        margin: 40px;
+    }
+}
+@media (max-width: 799px){
+    .award-card{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .award-content{
+        padding: 25px;
+    }
+}
+@media (max-width: 399px){
+    .award-card{
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .award-content{
+        padding: 25px;
+    }
+}
+@media (max-width: 335px){
+    .award-card{
+        width: 90%;
+        height: 573px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .award-content{
+        padding: 25px;
+    }
+}
+
+
+
+.retirement-header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    background: #0658cb;
+}
+.retirement-text{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 5px;
+}
+.retirement-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #71a0e1;
+}
+.retirement-content iframe{
+    margin: 30px;
+    width: 90%;
+    height: 683px!important;
+    border-radius: 15px;
+}
+#gallery-container{
+    display: flex;
+    padding-top: 6px;
+    background: black;
+    flex-wrap: wrap;
+}
+#gallery-container .section{
+    flex: 21%;
+    padding: 0 4px;
+}
+#gallery-container .section img{
+    width: 100%;
+    
+}
+#gallery-container .section img:hover{
+    transform: scale(1.1);
+    transition: all 100ms;
+    cursor: pointer;
+}
+.gallery-header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    background: #0658cb;
+}
+.gallery-text{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 5px;
+}
+@media (max-width: 725px){
+    #gallery-container .section{
+        flex: 46%;
+    }
+}
+@media (max-width: 415px){
+    #gallery-container .section{
+        flex: 96%;
+    }
+    #gallery-container .section img:hover{
+        transform: scale(1);
+        transition: all 100ms;
+        cursor: pointer;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    height: 100px;
+}
+footer p{
+    margin: 40px;
+}
+
+
+
+
+/*• Dhoni received Padma Bhushan on Monday the third highest civilian
+award on the seventh anniversary of the famous World Cup.
+• Dhoni is the first player to receive this award twice: ICC ODI Player of the
+Year award in 2008 and 2009.
+• Dhoni received The Rajiv Gandhi Khel Ratna award in 2007.
+• Dhoni received The Padma Shri, India's fourth highest civilian honour, in
+2009.
+• In 2009, Dhoni was named as the captain of ICC World Test XI and ICC
+World ODI XI teams.
+• Dhoni has been felicitated with Honorary doctorate degree by De
+Montfort University in August 2011.
+• The Indian Territorial Army conferred the honorary rank of Lieutenant
+Colonel to Dhoni on 1st November 2011. After Kapil Dev, he is the second Indian cricketer to receive this honour.
+• In 2011, Time magazine included Dhoni as one of the "Most Influential
+People in the World", in its annual Time 100 list.
+• Another one of MS Dhoni World Record as in 2012, MS Dhoni was rated
+as the 16th most marketable athlete in the world, by SportsPro.
+• In 2013, Dhoni was felicitated with LG People's Choice Award
+. In June 2015, Forbes ranked Dhoni at 23rd in the list of highest paid
+athletes in the world adding to MS Dhoni World Records.
+• In 2016, a biopic M.S. Dhoni: The Untold Story was made on him.*/
+
